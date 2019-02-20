@@ -10,22 +10,22 @@ submitIt
 });
 
 function getIt() {
-  $('p').addEventListener("click", function() {
+  $('p').on("click", function() {
     alert("Hey!") ;
   })
 }
 function frameIt() {
-  $(img).addEventListener("load", function() {
+  $(img).on("load", function() {
     self.class = "tasty"
   })
 }
 function pressIt() {
-  $('#typing').addEventListener("keydown", function(e) {
+  $('#typing').on("keydown", function(e) {
     if (e.which === 71) {alert('You have pressed the G key')}
   })
 }
 function submitIt() {
-  $('form').addEventListener("submit", function() {
+  $('form').on("submit", function() {
     alert('Your form is going to be submitted now.')
   })
 }
